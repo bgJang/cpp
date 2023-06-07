@@ -1,4 +1,4 @@
-// p.149 ì—°ìŠµë¬¸ì œ 3-1
+// p.149 ¿¬½À¹®Á¦ 3-1
 
 #include <iostream>
 #include "tower.h"
@@ -7,7 +7,8 @@ int main() {
     Tower myTower; // 1meter
     Tower seoulTower(100);
 
-    std::cout << "ë†’ì´ëŠ” " << myTower.getHeight() << std::endl;
-    std::cout << "ë†’ì´ëŠ” " << seoulTower.getHeight() << std::endl;
+    std::cout << "³ôÀÌ´Â " << myTower.getHeight() << std::endl;
+    std::cout << "³ôÀÌ´Â " << seoulTower.getHeight() << std::endl;
 }
+
 
