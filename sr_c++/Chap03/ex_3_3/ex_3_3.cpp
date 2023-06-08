@@ -11,18 +11,16 @@ public:
 	double getArea();
 }; 
 
-Circle::Circle() {
-	radius = 1;
-	std::cout << "반지름 " << radius << " 원 생성" << std::endl;
-}
 
-Circle::Circle(int r) {
+Circle::Circle() : Circle(1) { }// 타겟 생성자
+
+Circle::Circle(int r) { // 위임 생성자
 	radius = r;
 	std::cout << "반지름 " << radius << " 원 생성" << std::endl;
 }
 
 double Circle::getArea() {
-	return 3.14*radius*radius;
+	return 3.14 * radius * radius;
 }
 
 int main() {
