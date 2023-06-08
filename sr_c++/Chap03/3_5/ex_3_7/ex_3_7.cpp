@@ -1,10 +1,10 @@
 // 명품 C++ 프로그래밍
-// 3.5 (p 123, 124)
-// 예제 3-7, 8
+// 3.5 (p 123, 124), 3.8 (p.136)
+// 예제 3-7, 8, 9
 
 #include <iostream>
 
-class Circle {
+struct Circle {
 public:
 	int radius;
 	Circle(); 
