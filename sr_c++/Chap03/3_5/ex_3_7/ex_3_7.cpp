@@ -1,6 +1,6 @@
 // 명품 C++ 프로그래밍
-// 3.5 (p 123)
-// 예제 3-7
+// 3.5 (p 123, 124)
+// 예제 3-7, 8
 
 #include <iostream>
 
@@ -31,8 +31,18 @@ double Circle::getArea() {
 	return 3.14*radius*radius;
 }
 
-int main() {
-	Circle donu;
-	Circle pizza(30); 
-	return 0;
+
+Circle globalDonut(1000);
+Circle globalPizza(2000);
+
+void f() {
+	Circle fDonut(100);
+	Circle fPizza(200);
 }
+
+int main() {
+	Circle mainDonut;
+	Circle mainPizza(30);
+	f();
+}
+
